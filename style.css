@@ -1,0 +1,153 @@
+/*--------------Blog--------------*/
+.sub-header{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(214, 21, 21);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #170101;
+}
+.sub-header {
+    /* ... your existing styles ... */
+    position: relative; /* Crucial for positioning the image */
+    overflow: hidden; /* Prevent image overflow */
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/Relationship.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 0.8; /* Adjust opacity as needed for overlay effect */
+    z-index: -1; /* Place the image behind the content */
+}
+
+
+.blog-content {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.row {
+    display: flex;
+    margin-top: 100px;
+}
+
+.left-column {
+    width: 50%; /* Adjust as needed */
+    text-align: left;
+    padding: 30px;
+}
+
+.right-column {
+    width: 50%; /* Adjust as needed */
+    text-align: center;
+    padding-left: 30px; /* Add some space */
+}
+.right-column h3{
+    color: #e20404;
+    font-size:xx-large;
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.blog-text {
+    text-align: left;
+    margin-top: 80px;
+}
+
+.blog-text p {
+    padding: 10px;
+}
+
+.blog-text h3 {
+    margin-top: 10px;
+    color: #e20404;
+    font-size:xx-large;
+    padding-top: 10px;
+
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Add any other styles from your original style.css */
+
+.comment-box{
+    border:1px solid #e3d0d0;
+    margin: 50px 0;
+    padding: 20px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-form button{
+    margin: 10px 0;
+
+}
+/* Default styles for desktop */
+/* ... your existing CSS ... */
+
+/* Styles for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Reduce padding in the header section */
+    .sub-header {
+        padding: 0px 0; /* Reduce vertical padding */
+    }
+
+    /* Reduce padding in the navigation bar */
+    nav {
+        padding: 5px 0; /* Reduce vertical padding */
+    }
+
+    /* Adjust the header text box */
+    .header-text-box {
+        padding: 2px 50px; /* Reduce padding */
+    }
+
+    .header-text-box h1 {
+        font-size: 24px; /* Adjust font size if needed */
+        margin: 5px 0; /* Reduce margin */
+    }
+
+    /* Adjust the header image */
+    .header-image {
+        height: 40px; /* Or whatever height you prefer */
+        margin-bottom: 5px; /* Reduce margin */
+    }
+
+    /* adjust the logo image */
+    nav img {
+        height: 40px; /* adjust logo height */
+    }
+
+    /* Adjust the blog content section */
+    .blog-content {
+        padding-top: 5px; /* Reduce top padding */
+    }
+
+    /* Adjust the blog paragraph box*/
+    .blog-paragraph-box{
+        margin-bottom: 10px;
+    }
+}
